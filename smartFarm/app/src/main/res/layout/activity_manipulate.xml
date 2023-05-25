@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manipulate"
+    android:background="@drawable/back2">
+
+    <TextView
+        android:id="@+id/vale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vale"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="300dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/vale_button"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:thumb="@drawable/thumb"
+        app:track="@drawable/track"
+        app:layout_constraintBottom_toBottomOf="@+id/vale"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/vale"
+        app:layout_constraintTop_toTopOf="@+id/vale" />
+
+    <TextView
+        android:id="@+id/fan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fan"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/vale"
+        app:layout_constraintStart_toStartOf="@+id/vale"
+        app:layout_constraintTop_toBottomOf="@+id/vale" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/Fan_button"
+        android:layout_width="70dp"
+        android:thumb="@drawable/thumb"
+        app:track="@drawable/track"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/fan"
+        app:layout_constraintEnd_toEndOf="@+id/vale_button"
+        app:layout_constraintStart_toStartOf="@+id/vale_button"
+        app:layout_constraintTop_toTopOf="@+id/fan" />
+
+    <TextView
+        android:id="@+id/Pump"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pump"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/fan"
+        app:layout_constraintStart_toStartOf="@+id/fan"
+        app:layout_constraintTop_toBottomOf="@+id/fan" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/Pump_button"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:thumb="@drawable/thumb"
+        app:layout_constraintBottom_toBottomOf="@+id/Pump"
+        app:layout_constraintEnd_toEndOf="@+id/Fan_button"
+        app:layout_constraintStart_toStartOf="@+id/Fan_button"
+        app:layout_constraintTop_toBottomOf="@+id/fan"
+        app:track="@drawable/track" />
+</androidx.constraintlayout.widget.ConstraintLayout>
